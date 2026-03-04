@@ -7,14 +7,14 @@
 # filter_list([1,'a','b',0,15]) == [1,0,15]
 # filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
-def filter_list(l):
-    result = []
-    for ch in l:
-        if type(ch) is int:
-            result.append(ch)
-            
-    return result
-    
 # def filter_list(l):
-#   'return a new list with the strings filtered out'
-#   return [i for i in l if not isinstance(i, str)]
+#     result = []
+#     for ch in l:
+#         if type(ch) is int:
+#             result.append(ch)
+            
+#     return result
+    
+def filter_list(l):
+  'return a new list with the strings filtered out'
+  return [i for i in l if not isinstance(i, str)]
