@@ -7,13 +7,15 @@
 
 # If there is no such number in the array, 0 should be returned.
 
-def magic_sum(arr):
-    digit = 3
-    op_arr = []
-    for i in arr:
-        if i % 2 != 0 and str(digit) in str(i):
-            op_arr.append(i)
-    return sum(op_arr)
-    
+
 # def magic_sum(arr):
-#     return arr and sum(x for x in arr if x%2 and '3' in str(x)) or 0
+#     digit = 3
+#     op_arr = []
+#     for i in arr:
+#         if i % 2 != 0 and str(digit) in str(i):
+#             op_arr.append(i)
+#     return sum(op_arr)
+
+
+def magic_sum(arr):
+    return arr and sum(x for x in arr if x%2 and '3' in str(x)) or 0
