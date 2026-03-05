@@ -20,15 +20,6 @@
 # substring, string, 4 --> -1
 
 
-def find_nth_occurrence(substring, string, occurrence=1):
-    count = 0
-    for i, char in enumerate(string):
-        capture = string[i: i+len(substring)]
-        if capture == substring:
-            count +=1
-            if count == occurrence:
-                return i
-    return -1
 
 
 # def find_nth_occurrence(substring, string, occurrence=1):
@@ -42,3 +33,15 @@ def find_nth_occurrence(substring, string, occurrence=1):
 # def find_nth_occurrence(sb, s, n=1):
 #     r = list(re.finditer('(?='+sb+')', s))
 #     return r[n-1].span()[0] if n<=len(r) else -1
+
+
+
+def find_nth_occurrence(substring, string, occurrence=1):
+    count = 0
+    for i, char in enumerate(string):
+        capture = string[i: i+len(substring)]
+        if capture == substring:
+            count +=1
+            if count == occurrence:
+                return i
+    return -1
