@@ -7,12 +7,12 @@
 # Notes
 # The parameters (divisor, bound) passed to the function are only positive values .
 
-def max_multiple(divisor, bound):
-    result = 0
-    for i in range(bound+1):
-        if i % divisor == 0:
-            result = i
-    return result
-
 # def max_multiple(divisor, bound):
-#     return bound - (bound % divisor)
+#     result = 0
+#     for i in range(bound+1):
+#         if i % divisor == 0:
+#             result = i
+#     return result
+
+def max_multiple(divisor, bound):
+    return bound - (bound % divisor)
