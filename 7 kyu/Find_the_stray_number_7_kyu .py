@@ -6,13 +6,15 @@
 # [1, 1, 2] ==> 2
 # [17, 17, 3, 17, 17, 17, 17] ==> 3
 
-def stray(arr):
-    result = 0
-    for i in arr:
-        if arr.count(i) == 1:
-            result = i
-    return result
-    
-    
+
+
 # def stray(arr):
-#     return [num for num in arr if arr.count(num) == 1][0]
+#     result = 0
+#     for i in arr:
+#         if arr.count(i) == 1:
+#             result = i
+#     return result
+    
+    
+def stray(arr):
+    return [num for num in arr if arr.count(num) == 1][0]
