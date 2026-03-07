@@ -8,13 +8,15 @@
 
 # modify_multiply ("This is a string", 3 ,5) 
 
-def modify_multiply(st, loc, num):
-    semi_result =[]
-    count = 0
-    while count < num:
-        semi_result.append(st.split()[loc])
-        count += 1
-    return "-".join(semi_result)
 
 # def modify_multiply(st, loc, num):
-    # return '-'.join([st.split()[loc]]*num)
+#     semi_result =[]
+#     count = 0
+#     while count < num:
+#         semi_result.append(st.split()[loc])
+#         count += 1
+#     return "-".join(semi_result)
+
+
+def modify_multiply(st, loc, num):
+    return '-'.join([st.split()[loc]]*num)
