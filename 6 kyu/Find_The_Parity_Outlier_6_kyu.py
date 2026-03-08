@@ -9,24 +9,28 @@
 
 # [160, 3, 1719, 19, 11, 13, -21] --> 160 (the only even number)
 
-def find_outlier(integers):
-    a = 0
-    b = 0 
-    c = 0
-    d = 0 
-    for i in integers:
-        if i % 2 == 0:
-            a = i
-            b += 1
-        else:
-            c = i
-            d += 1
-    if b == 1:
-        return a
-    else:
-        return c
- 
-#  def find_outlier(int):
-#     odds = [x for x in int if x%2!=0]
-#     evens= [x for x in int if x%2==0]
-#     return odds[0] if len(odds)<len(evens) else evens[0]
+
+
+# def find_outlier(integers):
+#     a = 0
+#     b = 0 
+#     c = 0
+#     d = 0 
+#     for i in integers:
+#         if i % 2 == 0:
+#             a = i
+#             b += 1
+#         else:
+#             c = i
+#             d += 1
+#     if b == 1:
+#         return a
+#     else:
+#         return c
+
+
+
+ def find_outlier(int):
+    odds = [x for x in int if x%2!=0]
+    evens= [x for x in int if x%2==0]
+    return odds[0] if len(odds)<len(evens) else evens[0]
