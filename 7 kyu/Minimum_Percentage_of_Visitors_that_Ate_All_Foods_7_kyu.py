@@ -38,10 +38,13 @@
 # Enjoy!
 
 
+
+    
+# def minimum_percentage(foods):
+#     return max(0, sum(foods) - 100*(len(foods)-1))
+
+
 def minimum_percentage(foods):
     result = max(0,100 - sum(100 - p for p in foods))
     
     return result
-    
-# def minimum_percentage(foods):
-#     return max(0, sum(foods) - 100*(len(foods)-1))
