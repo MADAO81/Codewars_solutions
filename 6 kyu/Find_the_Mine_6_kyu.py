@@ -15,15 +15,17 @@
 
 # [ [0, 0, 0], [0, 0, 0], [0, 1, 0] ] --> [2, 1]
 
-def mine_location(field):
-    for row_index, row in enumerate(field):
-        for colon_index, cell in enumerate(row):
-            if cell == 1:
-                return [row_index,colon_index]
+
+
+# def mine_location(field):
+#     for row_index, row in enumerate(field):
+#         for colon_index, cell in enumerate(row):
+#             if cell == 1:
+#                 return [row_index,colon_index]
 
 
 
 
-# def mineLocation(field):
-#     for subfield in field:
-#         if 1 in subfield: return [field.index(subfield), subfield.index(1)]
+def mineLocation(field):
+    for subfield in field:
+        if 1 in subfield: return [field.index(subfield), subfield.index(1)]
