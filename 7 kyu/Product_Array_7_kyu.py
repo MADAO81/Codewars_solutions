@@ -26,11 +26,6 @@
 
 # The Third element 5 is the product of all array's elements except the Third element 2.
 
-def product_array(numbers):
-    p = 1
-    for el in numbers:
-        p *= el
-    return [p / el for el in numbers]
 
 
 # from operator import mul
@@ -44,3 +39,10 @@ def product_array(numbers):
 # from math import prod
 # def product_array(numbers):
 #     return [prod(numbers)/i for i in numbers]
+
+
+def product_array(numbers):
+    p = 1
+    for el in numbers:
+        p *= el
+    return [p / el for el in numbers]
