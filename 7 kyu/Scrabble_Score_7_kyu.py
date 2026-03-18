@@ -14,8 +14,7 @@
 # Q, Z                               10
 # There will be a preloaded dictionary dict_scores with all these values: dict_scores["E"] == 1
 
-def scrabble_score(st): 
-    return sum(dict_scores.get(letter,0) for letter in st.upper())
+
 
 # def scrabble_score(st): 
 #     values = {"aeioulnrst": 1, "dg": 2, "bcmp": 3, "fhvwy": 4, "k": 5, "jx": 8, "qz": 10}
@@ -25,3 +24,7 @@ def scrabble_score(st):
 #             if letter.lower() in key:
 #                 score += value
 #     return score
+
+
+def scrabble_score(st): 
+    return sum(dict_scores.get(letter,0) for letter in st.upper())
