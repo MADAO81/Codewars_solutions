@@ -18,18 +18,21 @@
 # Your function should return ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 # Note: The order of the permutations doesn't matter.
 
-def permutations(s):
-    result = set([s])
-    if len(s) == 2:
-        result.add(s[1] + s[0])
-    elif len(s) > 2:
-        for i, c in enumerate(s):
-            for t in permutations(s[:i] + s[i + 1:]):
-                result.add(c + t)
-    return result
+
+# Solution_1
+# def permutations(s):
+#     result = set([s])
+#     if len(s) == 2:
+#         result.add(s[1] + s[0])
+#     elif len(s) > 2:
+#         for i, c in enumerate(s):
+#             for t in permutations(s[:i] + s[i + 1:]):
+#                 result.add(c + t)
+#     return result
 
 
-# import itertools
+# Solution_2
+import itertools
 
-# def permutations(string):
-#     return list("".join(p) for p in set(itertools.permutations(string)))
+def permutations(string):
+    return list("".join(p) for p in set(itertools.permutations(string)))
