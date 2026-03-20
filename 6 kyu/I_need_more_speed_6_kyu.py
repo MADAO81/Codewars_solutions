@@ -9,13 +9,17 @@
 # Usual builtins have been deactivated. Don't count on them.
 # You'll have to do it fast enough, so think about performances
 
-def reverse(seq):
-    new_seq = list()
-    for i in range(len(seq)):
-        new_seq.append(seq.pop())
-    seq.extend(new_seq)
+
 
 
 # def reverse(seq): 
 #     for i in range(len(seq)//2): 
 #         seq[i], seq[len(seq)-1-i] = seq[len(seq)-1-i], seq[i]
+
+
+
+def reverse(seq):
+    new_seq = list()
+    for i in range(len(seq)):
+        new_seq.append(seq.pop())
+    seq.extend(new_seq)
