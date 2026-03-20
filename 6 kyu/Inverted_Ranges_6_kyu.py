@@ -30,6 +30,19 @@
 
 # invertedRanges([[0, 25], [51, 75]]) == [[26, 50], [76, 100]];
 
+
+
+# def inverted_ranges(ranges):
+#     complement, start = [], 0
+#     for s, e in ranges:
+#         if s > start:
+#             complement.append((start, s-1))
+#         start = e+1
+#     if start <= 100:
+#         complement.append((start, 100))
+#     return complement
+
+
 def inverted_ranges(ranges):
     if ranges == []:
         return [(0,100)]
@@ -43,13 +56,3 @@ def inverted_ranges(ranges):
         result.append((starting_point, 100))
     return result
 
-
-# def inverted_ranges(ranges):
-#     complement, start = [], 0
-#     for s, e in ranges:
-#         if s > start:
-#             complement.append((start, s-1))
-#         start = e+1
-#     if start <= 100:
-#         complement.append((start, 100))
-#     return complement
