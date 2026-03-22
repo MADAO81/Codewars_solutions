@@ -5,11 +5,13 @@
 # "abcdefghijklm" --> ["b", "d", "f", "h", "j", "l"]
 # "a"             --> "invalid string"
 
+# def even_chars(st): 
+#     if 2 > len(st) or len(st) > 100:
+#         return "invalid string"
+#     return list(st)[1::2]
+
+
 def even_chars(st): 
     if 2 > len(st) or len(st) > 100:
         return "invalid string"
     return [list(st)[ch] for ch in range(1,len(list(st)),2)]
-
-#     if 2 > len(st) or len(st) > 100:
-#         return "invalid string"
-#     return list(st)[1::2]
