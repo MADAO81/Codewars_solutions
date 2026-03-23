@@ -15,12 +15,16 @@
 # grapes
 # bananas
 
-def strip_comments(strng, markers):
-    s_list = strng.split('\n')
-    for marker in markers:
-        s_list = [item.split(marker)[0].rstrip() for item in s_list]
-    return '\n'.join(s_list)
 
-# import re
-# def solution(string, markers):
-#     return string if not markers else re.sub(f" *[{re.escape(''.join(markers))}].*", "", string, re.MULTILINE)
+
+# def strip_comments(strng, markers):
+#     s_list = strng.split('\n')
+#     for marker in markers:
+#         s_list = [item.split(marker)[0].rstrip() for item in s_list]
+#     return '\n'.join(s_list)
+
+
+
+import re
+def solution(string, markers):
+    return string if not markers else re.sub(f" *[{re.escape(''.join(markers))}].*", "", string, re.MULTILINE)
