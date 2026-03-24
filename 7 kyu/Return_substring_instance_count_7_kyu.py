@@ -11,7 +11,10 @@
 # full_text = "aaabbbcccc", search_text = "bbb"
 #     ---> should return 1
 
+# solution #1
+# solution = str.count
+
+# solution #2
 def solution(full_text, search_text):
     return full_text.count(search_text)
     
-# solution = str.count
