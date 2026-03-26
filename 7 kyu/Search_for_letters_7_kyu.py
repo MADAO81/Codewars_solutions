@@ -14,16 +14,17 @@
 # "aaaaaaa79345675"  =>  "10000000000000000000000000"
 # "&%#*"  =>  "00000000000000000000000000"
 
-def change(st):
-    new = ""
-    st = st.lower()
-    for letter in "abcdefghijklmnopqrstuvwxyz":
-        if letter in st:
-            new += "1"
-        else:
-            new += "0"
-    return new
-
 
 # def change(st):
-#     return ''.join(str(int(c in st.lower())) for c in 'abcdefghijklmnopqrstuvwxyz')
+#     new = ""
+#     st = st.lower()
+#     for letter in "abcdefghijklmnopqrstuvwxyz":
+#         if letter in st:
+#             new += "1"
+#         else:
+#             new += "0"
+#     return new
+
+
+def change(st):
+    return ''.join(str(int(c in st.lower())) for c in 'abcdefghijklmnopqrstuvwxyz')
