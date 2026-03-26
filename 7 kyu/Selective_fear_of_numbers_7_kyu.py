@@ -18,6 +18,21 @@
 # Write a function which takes a string (day of the week) and an integer (number to be tested) 
 # so it tells the doctor if I'm afraid or not. (return a boolean)
 
+
+
+# def am_I_afraid(day,num):
+#     return {
+#         'Monday':  num == 12,
+#         'Tuesday': num > 95,
+#         'Wednesday': num == 34,
+#         'Thursday': num == 0,
+#         'Friday': num % 2 == 0,
+#         'Saturday': num ==  56,
+#         'Sunday': num == 666 or num == -666,
+#     }[day]
+
+
+
 def am_I_afraid(day,num):
     if day == "Monday":
         return num == 12
@@ -33,15 +48,3 @@ def am_I_afraid(day,num):
         return num == 56
     elif day == 'Sunday':
         return (num == 666) == True or (num == -666) == True
-
-
-# def am_I_afraid(day,num):
-#     return {
-#         'Monday':  num == 12,
-#         'Tuesday': num > 95,
-#         'Wednesday': num == 34,
-#         'Thursday': num == 0,
-#         'Friday': num % 2 == 0,
-#         'Saturday': num ==  56,
-#         'Sunday': num == 666 or num == -666,
-#     }[day]
