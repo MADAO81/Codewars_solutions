@@ -1,0 +1,11 @@
+# https://www.codewars.com/kata/56d0a591c6c8b466ca00118b/train/python
+
+# def is_triangular(t):
+#     for i in range(int(t)+1):
+#         if t == i*(i+1)/2:
+#             return True
+#     return False
+
+def is_triangular(t):
+    x = int((t*2)**0.5)
+    return t == x*(x+1)/2
