@@ -1,20 +1,5 @@
 # https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/python
 
-import re
-def stock_list(stocklist, categories):
-    total = dict()
-    string = str()
-    for letter in categories:
-        regex = re.compile(r'^('+letter+').*\s(\d+)')
-        for code in stocklist:
-            mo = regex.findall(code)
-            if mo:
-                total[mo[0][0]] = total.get(mo[0][0], 0) + int(mo[0][1])
-            else:
-                total[letter] = total.get(letter, 0)
-    for key, value in total.items():
-        string += f'({key} : {value}) - '
-    return string.rstrip(' - ') 
 
 
 # def stock_list(listOfArt, listOfCat):
@@ -30,3 +15,20 @@ def stock_list(stocklist, categories):
 #             result += " - "
 #         result += "(" + str(cat) + " : " + str(total) + ")"
 #     return result
+
+
+import re
+def stock_list(stocklist, categories):
+    total = dict()
+    string = str()
+    for letter in categories:
+        regex = re.compile(r'^('+letter+').*\s(\d+)')
+        for code in stocklist:
+            mo = regex.findall(code)
+            if mo:
+                total[mo[0][0]] = total.get(mo[0][0], 0) + int(mo[0][1])
+            else:
+                total[letter] = total.get(letter, 0)
+    for key, value in total.items():
+        string += f'({key} : {value}) - '
+    return string.rstrip(' - ') 
