@@ -3,10 +3,12 @@
 
 # You can assume all values in the array are numbers.
 
+
+
+# def small_enough(array, limit):
+#     return max(array)<=limit
+
 def small_enough(array, limit):
     array = sorted(array)
     number = array[-1]
     return number <= limit
-
-# def small_enough(array, limit):
-#     return max(array)<=limit
