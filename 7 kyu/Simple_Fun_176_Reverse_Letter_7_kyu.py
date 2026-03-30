@@ -9,9 +9,11 @@
 # A string consists of lowercase latin letters, digits and symbols.
 # [output] a string
 
-import re
-def reverse_letter(st):
-    return re.sub("[^a-zA-Z]","",st)[::-1]
 
 # def reverse_letter(st):
 #     return "".join([x for x in st[::-1] if x.isalpha()])
+
+
+import re
+def reverse_letter(st):
+    return re.sub("[^a-zA-Z]","",st)[::-1]
