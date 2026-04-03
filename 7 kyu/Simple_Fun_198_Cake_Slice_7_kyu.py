@@ -11,13 +11,6 @@
 
 # For n = 3, the output should be 7.
 
-def cake_slice(n):
-    count = 0
-    slices = 1
-    while count != n:
-        count +=1
-        slices += count
-    return slices
 
 # def cake_slice(n):
 #     return (n ** 2 + n + 2) // 2
@@ -27,3 +20,13 @@ def cake_slice(n):
 #     for i in range(0,n+1):
 #         x += i
 #     return x
+
+
+
+def cake_slice(n):
+    count = 0
+    slices = 1
+    while count != n:
+        count +=1
+        slices += count
+    return slices
