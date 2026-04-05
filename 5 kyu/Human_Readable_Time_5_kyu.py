@@ -7,6 +7,14 @@
 
 # You can find some examples in the test fixtures.
 
+
+
+# def make_readable(seconds):
+#     hours, seconds = divmod(seconds, 60 ** 2)
+#     minutes, seconds = divmod(seconds, 60)
+#     return '{:02}:{:02}:{:02}'.format(hours, minutes, seconds)
+
+
 import math
 
 def make_readable(seconds):
@@ -14,9 +22,3 @@ def make_readable(seconds):
     m = math.floor(seconds%3600/60) # minutes
     s = seconds % 3600 % 60 # seconds
     return f"{h:02}:{m:02}:{s:02}"
-
-
-# def make_readable(seconds):
-#     hours, seconds = divmod(seconds, 60 ** 2)
-#     minutes, seconds = divmod(seconds, 60)
-#     return '{:02}:{:02}:{:02}'.format(hours, minutes, seconds)
