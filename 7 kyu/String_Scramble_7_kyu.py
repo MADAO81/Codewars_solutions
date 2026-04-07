@@ -18,11 +18,13 @@
 # The string will contain valid characters (A-Z, a-z, or 0-9);
 # the array will contain valid indices.
 
-def scramble(string, array):
-    return "".join(v for _, v in sorted(zip(array, string)))
 
 # def scramble(string, lst):
 #     result = [None] * len(string)
 #     for char, index in zip(string, lst):
 #         result[index] = char
 #     return "".join(result)
+
+
+def scramble(string, array):
+    return "".join(v for _, v in sorted(zip(array, string)))
