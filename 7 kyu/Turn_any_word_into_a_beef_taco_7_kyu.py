@@ -27,6 +27,13 @@
 # Note that no matter what ingredients are passed, our taco will always have a shell.
 
 
+
+    
+# def tacofy(word):
+#     tacos = {"a": "beef", "e": "beef", "i": "beef", "o": "beef", "u": "beef", "t": "tomato", "l": "lettuce", "c": "cheese", "g": "guacamole", "s": "salsa"}
+#     return ["shell"] + [tacos[c.lower()] for c in word if c.lower() in tacos] + ["shell"]
+
+
 def tacofy(word):  
     taco = ["shell"]
     ingridients = {'t':'tomato','l':'lettuce','c':'cheese','g':'guacamole','s':'salsa',
@@ -37,7 +44,3 @@ def tacofy(word):
             taco.append(ingridients[ch])
     taco.append("shell")
     return taco
-    
-# def tacofy(word):
-#     tacos = {"a": "beef", "e": "beef", "i": "beef", "o": "beef", "u": "beef", "t": "tomato", "l": "lettuce", "c": "cheese", "g": "guacamole", "s": "salsa"}
-#     return ["shell"] + [tacos[c.lower()] for c in word if c.lower() in tacos] + ["shell"]
