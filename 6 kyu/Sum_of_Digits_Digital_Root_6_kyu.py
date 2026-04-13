@@ -11,13 +11,16 @@
 # 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
 # 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
-def digital_root(n):
-    while n > 9:
-        n = sum(map(int, str(n)))
-    return n
+
     
 # def digital_root(n):
 #     return n if n < 10 else digital_root(sum(map(int,str(n))))
 
 # def digital_root(n):
 # 	return n%9 or n and 9 
+
+
+def digital_root(n):
+    while n > 9:
+        n = sum(map(int, str(n)))
+    return n
