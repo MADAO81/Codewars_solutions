@@ -9,17 +9,21 @@
 # Example
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
-def wave(people):
-    result = []
-    for indx, char in enumerate(people):
-        if char == " ":
-            pass
-        else:
-            el_people = list(people)
-            el_people[indx] = el_people[indx].upper()
-            el_people = "".join(el_people)
-            result.append(el_people)
-    return result
-    
-# def wave(str):
-#     return [str[:i] + str[i].upper() + str[i+1:] for i in range(len(str)) if str[i].isalpha()]
+
+
+# def wave(people):
+#     result = []
+#     for indx, char in enumerate(people):
+#         if char == " ":
+#             pass
+#         else:
+#             el_people = list(people)
+#             el_people[indx] = el_people[indx].upper()
+#             el_people = "".join(el_people)
+#             result.append(el_people)
+#     return result
+
+
+
+def wave(str):
+    return [str[:i] + str[i].upper() + str[i+1:] for i in range(len(str)) if str[i].isalpha()]
