@@ -7,15 +7,16 @@
 
 
 
-def solution(number):
-    multiples = []
-    if number < 0:
-        return 0
-    else:
-        for i in range(0,number):
-            if i % 3 == 0 or i % 5 == 0:
-                multiples.append(i)
-    return sum(multiples)
-    
 # def solution(number):
-#     return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
+#     multiples = []
+#     if number < 0:
+#         return 0
+#     else:
+#         for i in range(0,number):
+#             if i % 3 == 0 or i % 5 == 0:
+#                 multiples.append(i)
+#     return sum(multiples)
+
+
+def solution(number):
+    return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
