@@ -14,16 +14,18 @@
 
 # Good luck!
 
-def solve(a,b):
-    result = ""
-    for ch in a:
-        if ch not in b:
-            result +=ch
-    for ch in b:
-        if ch not in a:
-            result += ch
-    return result
-    
+
 # def solve(a,b):
-#     s = set(a)&set(b)
-#     return ''.join(c for c in a+b if c not in s)
+#     result = ""
+#     for ch in a:
+#         if ch not in b:
+#             result +=ch
+#     for ch in b:
+#         if ch not in a:
+#             result += ch
+#     return result
+
+
+def solve(a,b):
+    s = set(a)&set(b)
+    return ''.join(c for c in a+b if c not in s)
