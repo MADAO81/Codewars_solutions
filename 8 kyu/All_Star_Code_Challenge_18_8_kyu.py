@@ -10,13 +10,15 @@
 # The first argument can be an empty string
 # In languages with no distinct character data type, the second argument will be a string of length 1
 
-def str_count(strng, letter):
-    counter = 0
-    for ch in strng:
-        if ch == letter:
-            counter +=1
-    return counter
 
 
-# def strCount(string, letter):
-#     return string.count(letter)
+# def str_count(strng, letter):
+#     counter = 0
+#     for ch in strng:
+#         if ch == letter:
+#             counter +=1
+#     return counter
+
+
+def strCount(string, letter):
+    return string.count(letter)
