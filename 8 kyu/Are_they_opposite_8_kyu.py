@@ -16,18 +16,20 @@
 # "AB","Ab"     -> false
 # "",""         -> false
 
-def is_opposite(s1,s2):
-    if s1 == "" or s2 == "":
-        return False
-    work_string = ""
-    work_list = list(s1)
-    for ch in work_list:
-        if ch == ch.lower():
-            work_string += ch.upper()
-        else:
-            work_string += ch.lower()
-    return s2 == work_string
-    
-    
+
+
 # def is_opposite(s1,s2):
-#     return s1!="" and s1.swapcase() == s2
+#     if s1 == "" or s2 == "":
+#         return False
+#     work_string = ""
+#     work_list = list(s1)
+#     for ch in work_list:
+#         if ch == ch.lower():
+#             work_string += ch.upper()
+#         else:
+#             work_string += ch.lower()
+#     return s2 == work_string
+    
+    
+def is_opposite(s1,s2):
+    return s1!="" and s1.swapcase() == s2
