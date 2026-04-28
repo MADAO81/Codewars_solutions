@@ -5,11 +5,7 @@
 # 'b', 2  ==>  "black"
 # 'f', 5  ==>  "white"
 
-def square_color(file, rank):
-    if (ord(file)+ rank) % 2 == 0:
-        return "black"
-    else:
-        return "white"
+
         
         
 # def square_color(file, rank):
@@ -20,3 +16,10 @@ def square_color(file, rank):
 #         return "black"
 #     else:
 #         return "white"
+
+
+def square_color(file, rank):
+    if (ord(file)+ rank) % 2 == 0:
+        return "black"
+    else:
+        return "white"
