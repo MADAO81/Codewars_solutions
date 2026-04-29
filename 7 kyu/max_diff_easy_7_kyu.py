@@ -7,12 +7,14 @@
 # [1, 2, 3, -4]  //  returns 7 because 3 - (-4) == 7
 
 
-# def max_diff(list):
-#     return max(list) - min(list) if list else 0
 
 
-def max_diff(lst):
-    if lst == []:
-        return 0
-    else:
-        return sorted(lst)[-1]-sorted(lst)[0]
+# def max_diff(lst):
+#     if lst == []:
+#         return 0
+#     else:
+#         return sorted(lst)[-1]-sorted(lst)[0]
+
+
+def max_diff(list):
+    return max(list) - min(list) if list else 0
