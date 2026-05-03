@@ -14,17 +14,21 @@
 
 # I have also created other katas. Take a look if you enjoyed this kata!
 
-def find_missing_letter(chars):
-    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    start_to_search = alphabet.find(chars[0])
-    comparison_template = alphabet[start_to_search:start_to_search+len(chars)+1]
-    for e,i in enumerate(comparison_template):
-        if chars[e] != comparison_template[e]:
-            return comparison_template[e]
 
 
-  # def find_missing_letter(chars):
-  #   n = 0
-  #   while ord(chars[n]) == ord(chars[n+1]) - 1:
-  #       n += 1
-  #   return chr(1+ord(chars[n]))
+# def find_missing_letter(chars):
+#     alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#     start_to_search = alphabet.find(chars[0])
+#     comparison_template = alphabet[start_to_search:start_to_search+len(chars)+1]
+#     for e,i in enumerate(comparison_template):
+#         if chars[e] != comparison_template[e]:
+#             return comparison_template[e]
+
+
+
+
+  def find_missing_letter(chars):
+    n = 0
+    while ord(chars[n]) == ord(chars[n+1]) - 1:
+        n += 1
+    return chr(1+ord(chars[n]))
