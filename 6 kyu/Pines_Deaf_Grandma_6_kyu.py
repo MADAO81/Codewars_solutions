@@ -15,6 +15,21 @@
 # ["hi grandma", "WHAT", "bye", "BYE"]  -->
 # ["HUH?! SPEAK UP, SONNY!", "NO, NOT SINCE 1938!", "HUH?! SPEAK UP, SONNY!", "OK, BYE!"
 
+
+                
+                
+# from itertools import takewhile
+
+
+# def grandma(sentence):
+#     return 'NO, NOT SINCE 1938!' if sentence.isupper() else 'HUH?! SPEAK UP, SONNY!'
+
+
+# def deaf_grandma(you):
+#     return list(map(grandma, takewhile('BYE'.__ne__, you))) + ['OK, BYE!']
+
+
+
 def deaf_grandma(you):
     res = []
     for word in you:
@@ -28,14 +43,3 @@ def deaf_grandma(you):
             res.append("HUH?! SPEAK UP, SONNY!")
     return res
                 
-                
-                
-# from itertools import takewhile
-
-
-# def grandma(sentence):
-#     return 'NO, NOT SINCE 1938!' if sentence.isupper() else 'HUH?! SPEAK UP, SONNY!'
-
-
-# def deaf_grandma(you):
-#     return list(map(grandma, takewhile('BYE'.__ne__, you))) + ['OK, BYE!']
