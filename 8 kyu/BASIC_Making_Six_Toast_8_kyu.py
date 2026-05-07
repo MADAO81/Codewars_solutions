@@ -16,12 +16,15 @@
 # 12 --> 6
 # Good luck!
 
-def six_toast(num):
-    if num >= 6:
-        return num - 6
-    else:
-        return 6 - num
 
 
 # def six_toast(num):
-#   return abs(num-6)
+#     if num >= 6:
+#         return num - 6
+#     else:
+#         return 6 - num
+
+
+
+def six_toast(num):
+  return abs(num-6)
