@@ -15,7 +15,10 @@
 # Whatever you do, do not change what the function does. Good luck :)
 
 
-def describe_age(a): 
-    return f"You're a(n) {a<13 and 'kid' or a<18 and 'teenager' or a<65 and 'adult' or 'elderly'}"
+
 
 # describe_age = lambda a:"You're a(n) "+{1:"elderly",a<65:"adult",a<18:"teenager",a<13:"kid"}[1]
+
+
+def describe_age(a): 
+    return f"You're a(n) {a<13 and 'kid' or a<18 and 'teenager' or a<65 and 'adult' or 'elderly'}"
