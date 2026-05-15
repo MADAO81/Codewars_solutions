@@ -16,20 +16,25 @@
 
 # [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 
-def tribonacci(signature, n):
-    if not n:
-        return []
-    if n == 1:
-        return [signature[0]]
-    elif n == 2:
-        return [signature[0], signature[1]]
-    
-    for i in range(n-3):
-        signature.append(signature[i] + signature[i+1] + signature[i+2])
-    
-    return signature
+
+
+
 
 # def tribonacci(signature, n):
-#   result = signature[:n]
-#   for i in range(n - 3): res.append(sum(res[-3:]))
-#   return result
+#     if not n:
+#         return []
+#     if n == 1:
+#         return [signature[0]]
+#     elif n == 2:
+#         return [signature[0], signature[1]]
+    
+#     for i in range(n-3):
+#         signature.append(signature[i] + signature[i+1] + signature[i+2])
+    
+#     return signature
+
+
+def tribonacci(signature, n):
+  result = signature[:n]
+  for i in range(n - 3): res.append(sum(res[-3:]))
+  return result
