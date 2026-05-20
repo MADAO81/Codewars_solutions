@@ -16,23 +16,23 @@
 
 
 
-def encode(st):
-    code_dict = {"a":"1", "e":"2" , "i":"3", "o":"4", "u":"5"}
+# def encode(st):
+#     code_dict = {"a":"1", "e":"2" , "i":"3", "o":"4", "u":"5"}
     
-    for char,replacement in code_dict.items():
-        st = st.replace(char, replacement)
-    return st 
+#     for char,replacement in code_dict.items():
+#         st = st.replace(char, replacement)
+#     return st 
         
     
-def decode(st):
-    code_dict = {"1":"a", "2":"e" , "3":"i", "4":"o", "5":"u"}
-    for char,replacement in code_dict.items():
-        st = st.replace(char, replacement)
-    return st 
+# def decode(st):
+#     code_dict = {"1":"a", "2":"e" , "3":"i", "4":"o", "5":"u"}
+#     for char,replacement in code_dict.items():
+#         st = st.replace(char, replacement)
+#     return st 
 
 
-# def encode(s, t=str.maketrans("aeiou", "12345")):
-#     return s.translate(t)
+def encode(s, t=str.maketrans("aeiou", "12345")):
+    return s.translate(t)
     
-# def decode(s, t=str.maketrans("12345", "aeiou")):
-#     return s.translate(t)
+def decode(s, t=str.maketrans("12345", "aeiou")):
+    return s.translate(t)
