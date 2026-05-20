@@ -11,10 +11,7 @@
 # "(1111)555 2345"  => false
 # "(098) 123 4567"  => false
 
-def validPhoneNumber(phoneNumber):
-    import re
-    return bool(re.match(r"^(\([0-9]+\))? [0-9]+-[0-9]+$", phoneNumber))
-    
+
 
 # def validPhoneNumber(phoneNumber):
 #     number = ''
@@ -51,3 +48,10 @@ def validPhoneNumber(phoneNumber):
 #     elif pn[10] not in nums or pn[11] not in nums or pn[12] not in nums or pn[13] not in nums:
 #         return False
 #     else:
+
+
+
+def validPhoneNumber(phoneNumber):
+    import re
+    return bool(re.match(r"^(\([0-9]+\))? [0-9]+-[0-9]+$", phoneNumber))
+    
