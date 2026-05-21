@@ -20,13 +20,15 @@
 # In Shell bash a1 and a2 are strings. The return is a string where words are separated by commas.
 # Beware: In some languages r must be without duplicates.
 
-def in_array(array1, array2):
-    array3 = []
-    for ch2 in array2:
-        for ch1 in array1:
-            if ch1 in ch2 and ch1 not in array3:
-                array3.append(ch1)
-    return sorted(array3)
 
-# def in_array(a1, a2):
-#     return sorted({sub for sub in a1 if any(sub in s for s in a2)})
+# def in_array(array1, array2):
+#     array3 = []
+#     for ch2 in array2:
+#         for ch1 in array1:
+#             if ch1 in ch2 and ch1 not in array3:
+#                 array3.append(ch1)
+#     return sorted(array3)
+
+
+def in_array(a1, a2):
+    return sorted({sub for sub in a1 if any(sub in s for s in a2)})
