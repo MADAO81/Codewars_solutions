@@ -9,23 +9,25 @@
 # "String" => "StRiNg"
 # "Weird string case" => "WeIrD StRiNg CaSe"
 
-def to_weird_case(words):
-    i = 0
-    result = ""
-    for letter in words:
-        if i%2==0:
-            result += letter.upper()
-        else:
-            result += letter.lower()
-        if letter == " ":
-            i = 0
-        else:
-            i +=1
-    return result
+
+# def to_weird_case(words):
+#     i = 0
+#     result = ""
+#     for letter in words:
+#         if i%2==0:
+#             result += letter.upper()
+#         else:
+#             result += letter.lower()
+#         if letter == " ":
+#             i = 0
+#         else:
+#             i +=1
+#     return result
+
 
 
 # def to_weird_case_word(string):
 #     return "".join(c.upper() if i%2 == 0 else c for i, c in enumerate(string.lower()))
     
-# def to_weird_case(string):
-#     return " ".join(to_weird_case_word(str) for str in string.split())
+def to_weird_case(string):
+    return " ".join(to_weird_case_word(str) for str in string.split())
