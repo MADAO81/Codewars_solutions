@@ -12,13 +12,17 @@
 # "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
 # ""  -->  ""
 
-def order(sentence):
-    words_list = []
-    for i in range(1,10):
-        for word in sentence.split():
-            if str(i) in word:
-                words_list.append(word)
-    return " ".join(words_list)
 
-# def order(words):
-#   return ' '.join(sorted(words.split(), key=lambda w:sorted(w)))
+
+# def order(sentence):
+#     words_list = []
+#     for i in range(1,10):
+#         for word in sentence.split():
+#             if str(i) in word:
+#                 words_list.append(word)
+#     return " ".join(words_list)
+
+
+
+def order(words):
+  return ' '.join(sorted(words.split(), key=lambda w:sorted(w)))
