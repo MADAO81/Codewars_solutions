@@ -9,11 +9,14 @@
 # x = 1, n = 10 --> [1,2,3,4,5,6,7,8,9,10]
 # x = 2, n = 5  --> [2,4,6,8,10]
 
+
+    
+# def count_by(x, n):
+#     return [i * x for i in range(1, n + 1)]
+
+
 def count_by(x, n):
     """
     Return a sequence of numbers counting by `x` `n` times.
     """
     return list(range(x, n * x + 1, x))
-    
-# def count_by(x, n):
-#     return [i * x for i in range(1, n + 1)]
