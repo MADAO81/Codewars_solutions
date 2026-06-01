@@ -12,14 +12,7 @@
 # 12	1*2*3*4*5*6*7*8*9*10*11*12	479001600	2
 # Hint: You're not meant to calculate the factorial. Find another way to find the number of zeros.
 
-def zeros(n):
-    result = 0
-    degree = 1
-    
-    while n>0 and n/(5**degree) >= 1:
-        result += int(n/5**degree)
-        degree += 1
-    return result
+
 
 
 # def zeros(n):
@@ -43,3 +36,12 @@ def zeros(n):
 #         pow_of_5 *= 5
         
 #     return zero
+
+def zeros(n):
+    result = 0
+    degree = 1
+    
+    while n>0 and n/(5**degree) >= 1:
+        result += int(n/5**degree)
+        degree += 1
+    return result
