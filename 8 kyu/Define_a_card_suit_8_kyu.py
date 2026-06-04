@@ -14,18 +14,20 @@
 
 
 
-from preloaded import DECK
+# from preloaded import DECK
 
-def define_suit(card):
-    if card[-1:] == "C":
-        return 'clubs'
-    elif card[-1:] == "D":
-        return 'diamonds'
-    elif card[-1:] == "H":
-        return 'hearts'
-    elif card[-1:] == "S":
-        return 'spades'
+# def define_suit(card):
+#     if card[-1:] == "C":
+#         return 'clubs'
+#     elif card[-1:] == "D":
+#         return 'diamonds'
+#     elif card[-1:] == "H":
+#         return 'hearts'
+#     elif card[-1:] == "S":
+#         return 'spades'
 
-  # def define_suit(card):
-  #   d = {'C': 'clubs', 'S':'spades', 'D':'diamonds','H':'hearts'}
-  #   return d[card[-1]]
+
+
+  def define_suit(card):
+    d = {'C': 'clubs', 'S':'spades', 'D':'diamonds','H':'hearts'}
+    return d[card[-1]]
