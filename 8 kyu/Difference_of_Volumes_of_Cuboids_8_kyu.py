@@ -10,19 +10,20 @@
 
 # If you can, try writing it in one line of code.
 
-def find_difference(a, b):
-    cub_a = 1
-    cub_b = 1
-    dif_a_b = 0
-    for i in a:
-        cub_a *= i
-    for i in b:
-        cub_b *= i
-    dif_a_b = cub_a - cub_b
-    return abs(dif_a_b)
-    
-    
-# from numpy import prod
 
 # def find_difference(a, b):
-#     return abs(prod(a) - prod(b))
+#     cub_a = 1
+#     cub_b = 1
+#     dif_a_b = 0
+#     for i in a:
+#         cub_a *= i
+#     for i in b:
+#         cub_b *= i
+#     dif_a_b = cub_a - cub_b
+#     return abs(dif_a_b)
+    
+    
+from numpy import prod
+
+def find_difference(a, b):
+    return abs(prod(a) - prod(b))
