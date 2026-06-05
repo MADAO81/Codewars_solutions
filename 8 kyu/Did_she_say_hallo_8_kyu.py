@@ -18,9 +18,6 @@
 # function should be case insensitive to pass the tests
 
 
-def validate_hello(greetings):
-    greet_list =["hello", "ciao", "salut","hallo","hola", "ahoj", "czesc"]
-    return any(greet in greetings.lower() for greet in greet_list)
 
 
 # def validate_hello(greetings):
@@ -29,3 +26,8 @@ def validate_hello(greetings):
 #         if s in greetings.lower():
 #             return True
 #     return False
+
+
+def validate_hello(greetings):
+    greet_list =["hello", "ciao", "salut","hallo","hola", "ahoj", "czesc"]
+    return any(greet in greetings.lower() for greet in greet_list)
