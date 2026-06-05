@@ -5,7 +5,7 @@
 
 #         for digit in digits_list:
 #             if not (0 <= digit <= 9):
-#                 raise ValueError(f"Недопустимая цифра {digit}. Цифры должны быть от 0 до 9.")
+#                 raise ValueError(f"Invalid digit {digit}. The numbers must be from 0 to 9.")
 
 #         frequency = {digit: 0 for digit in digits_list}
 #         for number in integers_list:
