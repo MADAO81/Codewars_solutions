@@ -13,11 +13,11 @@
 # duck_duck_goose([a, b, c, d], 4) should return d.name
 
 
-def duck_duck_goose(players, goose):
-    while len(players) < goose:
-        goose -= len(players)
-    return players[goose - 1].name
-    
-    
 # def duck_duck_goose(players, goose):
-#     return players[(goose % len(players)) - 1].name
+#     while len(players) < goose:
+#         goose -= len(players)
+#     return players[goose - 1].name
+    
+    
+def duck_duck_goose(players, goose):
+    return players[(goose % len(players)) - 1].name
