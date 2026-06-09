@@ -10,12 +10,16 @@
 # "Hi! Hi!" ---> "Hi! Hi"
 # "Hi"      ---> "Hi"
 
-def remove(s):
-    if len(s)==0:
-        return s
-    if s[-1] == "!":
-        return s[:-1]
-    return s
+
 
 # def remove(s):
-#     return s[:-1] if s.endswith('!') else s
+#     if len(s)==0:
+#         return s
+#     if s[-1] == "!":
+#         return s[:-1]
+#     return s
+
+
+
+def remove(s):
+    return s[:-1] if s.endswith('!') else s
