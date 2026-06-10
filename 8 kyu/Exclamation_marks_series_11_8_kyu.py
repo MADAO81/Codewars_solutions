@@ -8,9 +8,6 @@
 # "aeiou" --> "!!!!!"
 # "ABCDE" --> "!BCD!"
 
-def replace_exclamation(st):
-    return ''.join('!' if letter in 'aeiouAEIOU' else letter for letter in st)
-
 
 # def replace_exclamation(st):
 #     vowel_str = "aeiouAEIOU"
@@ -22,3 +19,8 @@ def replace_exclamation(st):
 #             result.append(ch)
             
 #     return "".join(result)
+
+
+
+def replace_exclamation(st):
+    return ''.join('!' if letter in 'aeiouAEIOU' else letter for letter in st)
