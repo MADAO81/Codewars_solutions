@@ -13,13 +13,14 @@
 # Your xor function should have the behaviour described above, returning true if exactly one of the two expressions evaluate to true,
 # false otherwise.
 
-def xor(a,b):
-    if a == False and b == False:
-        return False
-    elif a == True and b == True:
-        return False
-    else:
-        return True
 
-  # def xor(a,b):
-  #   return a != b
+# def xor(a,b):
+#     if a == False and b == False:
+#         return False
+#     elif a == True and b == True:
+#         return False
+#     else:
+#         return True
+
+  def xor(a,b):
+    return a != b
