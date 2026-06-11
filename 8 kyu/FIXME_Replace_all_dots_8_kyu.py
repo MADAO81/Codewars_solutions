@@ -6,10 +6,13 @@
 # String str will never be null.
 
 
-def replace_dots(s):
-    return s.replace(".", "-")
 
 
 # import re
 # def replace_dots(str):
 #     return re.sub(r"\.", "-", str)
+
+
+
+def replace_dots(s):
+    return s.replace(".", "-")
