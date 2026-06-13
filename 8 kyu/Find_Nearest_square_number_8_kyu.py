@@ -10,12 +10,15 @@
 #
 # Good luck :)
 
-def nearest_sq(n):
-    result = round(n ** 0.5)
-    return result ** 2
+
 
 
 # def nearest_sq(n):
 #     import math
 #     m = round(math.sqrt(n))
 #     return m * m
+
+
+def nearest_sq(n):
+    result = round(n ** 0.5)
+    return result ** 2
