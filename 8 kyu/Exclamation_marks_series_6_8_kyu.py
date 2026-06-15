@@ -13,8 +13,6 @@
 # remove("!!!Hi !!hi!!! !hi",5) === "Hi hi!!! !hi"
 # remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
 
-def remove(st, n):
-    return st.replace("!","",n)
 
 # def remove(s, n):
 #     result=[]
@@ -25,3 +23,7 @@ def remove(st, n):
 #             else:
 #                 result.append(s[i])
 #     return "".join(result)
+
+
+def remove(st, n):
+    return st.replace("!","",n)
