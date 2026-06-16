@@ -12,8 +12,6 @@
 
 # Note: side will be an integer
 
-def cube_checker(volume, side):
-    return 0 < volume == side**3
 
 # def cube_checker(volume, side):
 #     if volume <= 0 or side <= 0:
@@ -21,3 +19,8 @@ def cube_checker(volume, side):
 #     expected_volume = side ** 3
 #     tolerance = 0.000000001
 #     return abs(volume - expected_volume) < tolerance
+
+
+
+def cube_checker(volume, side):
+    return 0 < volume == side**3
