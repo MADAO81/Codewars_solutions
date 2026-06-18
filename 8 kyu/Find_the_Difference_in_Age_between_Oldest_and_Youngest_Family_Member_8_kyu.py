@@ -5,9 +5,12 @@
 # The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0. 
 # Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
 
-def difference_in_ages(ages):
-    return sorted(ages)[0],sorted(ages)[-1],(sorted(ages)[-1]-sorted(ages)[0])
+
 
 
 # def difference_in_ages(ages):
 #     return (min(ages) , max(ages) , max(ages) - min(ages))
+
+
+def difference_in_ages(ages):
+    return sorted(ages)[0],sorted(ages)[-1],(sorted(ages)[-1]-sorted(ages)[0])
