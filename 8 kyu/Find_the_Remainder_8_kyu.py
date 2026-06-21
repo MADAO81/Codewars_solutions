@@ -21,11 +21,11 @@
 # result - division by zero (refer to the specifications on how to handle this in your language)
 
 
-def remainder(a,b):
-    try:
-        return max(a,b)%min(a,b)
-    except ZeroDivisionError:
-        return None
+# def remainder(a,b):
+#     try:
+#         return max(a,b)%min(a,b)
+#     except ZeroDivisionError:
+#         return None
 
 
 # def remainder(a,b):
@@ -37,5 +37,5 @@ def remainder(a,b):
 #         return b % a
 
 
-# def remainder(a,b):
-#     if min(a,b)!=0: return max(a,b)%min(a,b)
+def remainder(a,b):
+    if min(a,b)!=0: return max(a,b)%min(a,b)
