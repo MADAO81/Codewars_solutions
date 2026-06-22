@@ -16,6 +16,7 @@
 #         return "undefined"
 #     return str((y2 - y1) // (x2 - x1))
 
+
 def find_slope(points):
     try:
         return str((points[3] - points[1]) // (points[2] - points[0]))
