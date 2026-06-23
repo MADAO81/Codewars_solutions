@@ -7,10 +7,12 @@
 # Note
 # 1 Dollar = 100 Cents
 
-def fuel_price(litres, price_per_litre):
-    return litres * price_per_litre - min(5, litres // 2) * 0.05 * litres
 
 
 # def fuel_price(litres, price_per_liter):
 #     discount = int(min(litres, 10)/2) * 5 / 100
 #     return round((price_per_liter - discount) * litres, 2)
+
+
+def fuel_price(litres, price_per_litre):
+    return litres * price_per_litre - min(5, litres // 2) * 0.05 * litres
