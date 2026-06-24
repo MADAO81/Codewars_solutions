@@ -8,15 +8,15 @@
 # start < stop
 # step > 0
 
-def generate_range(start, stop, step):
-    result = []
-    for i in range(start,stop+1,step):
-        result.append(i)
-    return result
+# def generate_range(start, stop, step):
+#     result = []
+#     for i in range(start,stop+1,step):
+#         result.append(i)
+#     return result
 
 
 # def generate_range(min, max, step):
 #     return list(range(min, max + 1, step))
 
-# def generate_range(min, max, step):
-#     return [i for i in range(min, max+1, step)]
+def generate_range(min, max, step):
+    return [i for i in range(min, max+1, step)]
