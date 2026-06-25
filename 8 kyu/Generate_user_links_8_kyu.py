@@ -7,10 +7,13 @@
 # reference
 # use this as a reference encoding
 
-from urllib.parse import quote
-def generate_link(user):
-    encoded = quote(user)
-    return f"http://www.codewars.com/users/{encoded}"
-    
+
+# from urllib.parse import quote
+
 # def generate_link(user):
-#     return 'http://www.codewars.com/users/' + quote(user)
+#     encoded = quote(user)
+#     return f"http://www.codewars.com/users/{encoded}"
+
+
+def generate_link(user):
+    return 'http://www.codewars.com/users/' + quote(user)
