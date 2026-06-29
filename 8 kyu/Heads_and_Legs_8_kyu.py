@@ -29,23 +29,23 @@
 # Happy coding!
 
 
-def animals(heads, legs):
-    if heads <0 or legs<0:
-        return "No solutions"
-    if heads ==0 and legs ==0:
-        return (0,0)
-    cows =(legs -2*heads)/2
-    chickens = heads-cows
-    if cows <0 or cows !=int(cows):
-        return "No solutions"
-    if chickens <0 or chickens !=int(chickens):
-        return "No solutions"
-    return (int(chickens),int(cows))
-
-
 # def animals(heads, legs):
-#     chickens, cows = 2*heads-legs/2, legs/2-heads
-#     if chickens < 0 or cows < 0 or not chickens == int(chickens) or not cows == int(cows):
+#     if heads <0 or legs<0:
 #         return "No solutions"
-#     return chickens, cows
+#     if heads ==0 and legs ==0:
+#         return (0,0)
+#     cows =(legs -2*heads)/2
+#     chickens = heads-cows
+#     if cows <0 or cows !=int(cows):
+#         return "No solutions"
+#     if chickens <0 or chickens !=int(chickens):
+#         return "No solutions"
+#     return (int(chickens),int(cows))
+
+
+def animals(heads, legs):
+    chickens, cows = 2*heads-legs/2, legs/2-heads
+    if chickens < 0 or cows < 0 or not chickens == int(chickens) or not cows == int(cows):
+        return "No solutions"
+    return chickens, cows
     
