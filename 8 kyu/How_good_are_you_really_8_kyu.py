@@ -6,12 +6,7 @@
 # Your points are not included in the array of your class's points. Do not forget them when calculating
 # the average score!
 
-def better_than_average(class_points, your_points):
-    average = (sum(class_points)+your_points)/(len(class_points)+1)
-    if your_points > average:
-        return True
-    else:
-        return False
+
 
 # def better_than_average(class_points, your_points):
 #     average = (sum(class_points) + your_points) / (len(class_points) + 1)
@@ -19,3 +14,11 @@ def better_than_average(class_points, your_points):
 
 # def better_than_average(class_points, your_points)
 # return your_points > sum(class_points) / len(class_points)
+
+
+def better_than_average(class_points, your_points):
+    average = (sum(class_points)+your_points)/(len(class_points)+1)
+    if your_points > average:
+        return True
+    else:
+        return False
