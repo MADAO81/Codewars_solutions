@@ -14,12 +14,14 @@
 # Fundamentals
 # Suggest kata description edits
 
-def how_many_light_sabers_do_you_own(name="joe"):
-    if name != "Zach":
-        return 0
-    else:
-        return 18
 
 
-# def how_many_light_sabers_do_you_own(name=""):
-#     return (18 if name=="Zach" else 0)
+# def how_many_light_sabers_do_you_own(name="joe"):
+#     if name != "Zach":
+#         return 0
+#     else:
+#         return 18
+
+
+def how_many_light_sabers_do_you_own(name=""):
+    return (18 if name=="Zach" else 0)
