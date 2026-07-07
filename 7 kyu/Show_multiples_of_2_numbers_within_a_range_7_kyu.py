@@ -1,0 +1,13 @@
+# https://www.codewars.com/kata/583989556754d6f4c700018e/train/python
+
+
+# from math import lcm
+
+# def multiples(a, b, up):
+#     v = lcm(a,b)
+#     return [*range(v,up,v)]
+
+
+
+def multiples(s1,s2,s3):
+    return [i for i in range(1, s3) if i % s1 == 0 and i % s2 == 0]
