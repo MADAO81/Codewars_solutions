@@ -12,14 +12,16 @@
 # isDigit("3 5")
 # isDigit("zero")
 
-def is_digit(s):
-    try:
-        float(s)
-        return True
-    except ValueError:
-        return False
 
-# from re import match
 
-# def isDigit(string):
-#     return bool(match(r"^[-+]?\d+\.?\d*?$", string))
+# def is_digit(s):
+#     try:
+#         float(s)
+#         return True
+#     except ValueError:
+#         return False
+
+from re import match
+
+def isDigit(string):
+    return bool(match(r"^[-+]?\d+\.?\d*?$", string))
