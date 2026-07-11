@@ -3,9 +3,10 @@
 # A palindrome is a word, number, phrase, or other sequence of symbols that reads 
 # the same backwards as forwards, such as madam or racecar.
 
-def is_palindrome(s):
-    return s.lower() == "".join(reversed(s.lower()))
 
 # def is_palindrome(s):
 #     s = s.lower()
 #     return s == s[::-1]
+
+def is_palindrome(s):
+    return s.lower() == "".join(reversed(s.lower()))
