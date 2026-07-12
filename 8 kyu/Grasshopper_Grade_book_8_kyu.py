@@ -12,20 +12,24 @@
 # 0 <= score < 60	'F'
 # Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
 
-import statistics
-def get_grade(s1, s2, s3):
-    grades = [s1,s2,s3]
-    average = statistics.mean(grades)
-    if 90 <= average <= 100:
-        return "A"
-    elif 80 <= average < 90:
-        return "B"
-    elif 70 <= average < 80:
-        return "C"
-    elif 60 <= average < 70:
-        return "D"
-    elif 0 <= average < 70:
-        return "F"
-        
+
+
+# import statistics
 # def get_grade(s1, s2, s3):
-#     return {6:'D', 7:'C', 8:'B', 9:'A', 10:'A'}.get((s1 + s2 + s3) / 30, 'F')
+#     grades = [s1,s2,s3]
+#     average = statistics.mean(grades)
+#     if 90 <= average <= 100:
+#         return "A"
+#     elif 80 <= average < 90:
+#         return "B"
+#     elif 70 <= average < 80:
+#         return "C"
+#     elif 60 <= average < 70:
+#         return "D"
+#     elif 0 <= average < 70:
+#         return "F"
+
+
+
+def get_grade(s1, s2, s3):
+    return {6:'D', 7:'C', 8:'B', 9:'A', 10:'A'}.get((s1 + s2 + s3) / 30, 'F')
