@@ -7,8 +7,7 @@
 # name equals owner	'Hello boss'
 # otherwise	'Hello guest'
 
-def greet(name, owner):
-    return 'Hello boss' if name == owner else 'Hello guest'
+
     
     
 # def greet(name, owner):
@@ -16,3 +15,8 @@ def greet(name, owner):
 #         return "Hello boss"
 #     else:
 #         return "Hello guest"
+
+
+
+def greet(name, owner):
+    return 'Hello boss' if name == owner else 'Hello guest'
