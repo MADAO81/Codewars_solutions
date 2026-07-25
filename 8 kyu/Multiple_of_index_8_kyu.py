@@ -7,14 +7,6 @@
 
 # [-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
 
-def multiple_of_index(arr):
-    result = []
-    if arr[0] == 0:
-        result.append(0)
-    for i in range(1,len(arr)):
-        if arr[i] % i ==0:
-            result.append(arr[i])
-    return result
 
 
 # def multiple_of_index(arr):
@@ -35,3 +27,15 @@ def multiple_of_index(arr):
 #         if (arr[i] % i) == 0:
 #             x.append(arr[i])
 #     return x
+
+
+
+def multiple_of_index(arr):
+    result = []
+    if arr[0] == 0:
+        result.append(0)
+    for i in range(1,len(arr)):
+        if arr[i] % i ==0:
+            result.append(arr[i])
+    return result
+
