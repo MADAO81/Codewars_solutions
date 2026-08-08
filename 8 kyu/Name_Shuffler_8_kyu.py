@@ -5,10 +5,10 @@
 
 # "john McClane" --> "McClane john"
 
-def name_shuffler(str_):
-    oper = str_.split()
-    oper1 = oper[::-1]
-    return " ".join(oper1)
-    
 # def name_shuffler(str_):
-#     return ' '.join(str_.split(' ')[::-1])
+#     oper = str_.split()
+#     oper1 = oper[::-1]
+#     return " ".join(oper1)
+    
+def name_shuffler(str_):
+    return ' '.join(str_.split(' ')[::-1])
