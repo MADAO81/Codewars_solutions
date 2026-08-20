@@ -1,9 +1,8 @@
-# 🧑‍💻 Решения на Codewars Python
+# 🧑‍💻 Решения на Codewars
 
 [![Codewars Profile](https://www.codewars.com/users/MADAO81/badges/large)](https://www.codewars.com/users/MADAO81)
 ![Всего решено](https://img.shields.io/badge/Решено-1000+-blue?style=for-the-badge&logo=codewars)
 ![Ранг](https://img.shields.io/badge/Ранг-2_kyu-purple?style=for-the-badge&logo=codewars)
-![GitHub последний коммит](https://img.shields.io/github/last-commit/MADAO81/codewars-solutions?style=for-the-badge&logo=github)
 
 > Репозиторий с решениями задач с платформы Codewars. 
 
