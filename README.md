@@ -4,7 +4,7 @@
 ![Всего решено](https://img.shields.io/badge/Решено-1000+-blue?style=for-the-badge&logo=codewars)
 ![Ранг](https://img.shields.io/badge/Ранг-3_kyu-purple?style=for-the-badge&logo=codewars)
 
-> Репозиторий с моими решениями задач с платформы Codewars. Тысячи решений, сотни языков, бесконечный рост 🚀
+> Репозиторий с решениями задач с платформы Codewars. 
 
 ---
 
