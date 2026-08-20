@@ -1,20 +1,20 @@
-# 🧑‍💻 Решения на Codewars
+# 🧑‍💻 Codewars Solutions
 
 [![Codewars Profile](https://www.codewars.com/users/MADAO81/badges/large)](https://www.codewars.com/users/MADAO81)
-![Всего решено](https://img.shields.io/badge/Решено-1000+-blue?style=for-the-badge&logo=codewars)
-![Ранг](https://img.shields.io/badge/Ранг-2_kyu-purple?style=for-the-badge&logo=codewars)
+![Total Solved](https://img.shields.io/badge/Solved-1000+-blue?style=for-the-badge&logo=codewars)
+![Rank](https://img.shields.io/badge/Rank-2_kyu-purple?style=for-the-badge&logo=codewars)
 
-> Репозиторий с решениями задач с платформы Codewars. 
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-## 📊 Текущий прогресс (растет каждый день!)
-
-![Codewars Статистика](https://github.r2v.ch/codewars?user=MADAO81&langs=true&rank=true&theme=dark)
+> Repository with my solutions to coding challenges from Codewars.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-## 🛠️ Языки в репозитории
+## 📊 Current Progress
+
+![Codewars Stats](https://github.r2v.ch/codewars?user=MADAO81&langs=true&rank=true&theme=dark)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🛠️ Languages in This Repository
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
