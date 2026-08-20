@@ -4,7 +4,7 @@
 ![Total Solved](https://img.shields.io/badge/Solved-1000+-blue?style=for-the-badge&logo=codewars)
 ![Rank](https://img.shields.io/badge/Rank-2_kyu-purple?style=for-the-badge&logo=codewars)
 
-> Repository with my solutions to coding challenges from Codewars.
+> Repository with solutions to coding challenges from Codewars.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
