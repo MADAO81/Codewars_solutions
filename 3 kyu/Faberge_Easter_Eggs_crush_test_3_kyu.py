@@ -1,5 +1,16 @@
 # https://www.codewars.com/kata/54cb771c9b30e8b5250011d4/train/python
 
+
+
+# def height(n, m):
+#     h, t = 0, 1
+#     for i in range(1, n + 1): 
+#         t = t * (m - i + 1) // i
+#         h += t
+#     return h
+
+
+
 def height(n, m):
     if n == 0 or m == 0:
         return 0
