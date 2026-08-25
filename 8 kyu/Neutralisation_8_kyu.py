@@ -20,16 +20,18 @@
 # Notes
 # The two strings will be the same length.
 
-def neutralise(s1, s2):
-    result = ""
-    for i, j in zip(s1, s2):
-        if i == j:
-            result += i
-        else:
-            result += "0"
-    return result
 
 # def neutralise(s1, s2):
-# return ''.join([i if i == j else '0' for i, j in zip(s1, s2)])
+#     result = ""
+#     for i, j in zip(s1, s2):
+#         if i == j:
+#             result += i
+#         else:
+#             result += "0"
+#     return result
+
+
+def neutralise(s1, s2):
+return ''.join([i if i == j else '0' for i, j in zip(s1, s2)])
 
 
