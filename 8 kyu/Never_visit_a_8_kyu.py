@@ -1,10 +1,6 @@
 # https://www.codewars.com/kata/56c5847f27be2c3db20009c3/train/python
 
 
-def subtract_sum(number):
-    return "apple"
-
-
 
 # fruit = {1:'kiwi',2:'pear',3:'kiwi',4:'banana',5:'melon',6:'banana',7:'melon',
 #          8:'pineapple',9:'apple',10:'pineapple',11:'cucumber',12:'pineapple',
@@ -31,3 +27,9 @@ def subtract_sum(number):
 #     while not number in fruit:
 #         number -= (sum([int(i) for i in str(number)]))
 #     return fruit[number]
+
+
+
+def subtract_sum(number):
+    return "apple"
+
