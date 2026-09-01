@@ -9,13 +9,13 @@
 # "Hi! Hi!" ---> "Hi Hi!"
 # "Hi"      ---> "Hi!"
 
-def remove(st):
-    result = []
-    for ch in st:
-        if ch != "!":
-            result.append(ch)
-    result.append("!")
-    return "".join(result)
+# def remove(st):
+#     result = []
+#     for ch in st:
+#         if ch != "!":
+#             result.append(ch)
+#     result.append("!")
+#     return "".join(result)
 
-# def remove(s):
-#     return s.replace("!", "") + "!"
+def remove(s):
+    return s.replace("!", "") + "!"
