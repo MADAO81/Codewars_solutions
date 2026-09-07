@@ -8,8 +8,7 @@
 # If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is.
 
 
-def who_is_paying(name):
-    return [name,name[0:2]] if len(name)>2 else [name]
+
   
 # def who_is_paying(name):
 #         result = []
@@ -18,3 +17,6 @@ def who_is_paying(name):
 #             result.append(name[0]+name[1])
 #         return result
     
+
+def who_is_paying(name):
+    return [name,name[0:2]] if len(name)>2 else [name]
