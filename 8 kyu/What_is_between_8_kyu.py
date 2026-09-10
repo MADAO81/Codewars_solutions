@@ -8,12 +8,12 @@
 # b = 4
 # --> [1, 2, 3, 4]
 
-def between(a,b):
-    result = []
-    for i in range(a,b+1):
-        result.append(i)
-    return result
-    
-    
 # def between(a,b):
-#     return list(range(a,b+1))
+#     result = []
+#     for i in range(a,b+1):
+#         result.append(i)
+#     return result
+    
+    
+def between(a,b):
+    return list(range(a,b+1))
