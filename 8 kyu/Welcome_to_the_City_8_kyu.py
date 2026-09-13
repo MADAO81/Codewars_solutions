@@ -8,9 +8,9 @@
 # ['John', 'Smith'], 'Phoenix', 'Arizona'
 # This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
 
-def say_hello(name, city, state):
-    name = " ".join(name)
-    return f"Hello, {name}! Welcome to {city}, {state}!"
-    
 # def say_hello(name, city, state):
-#   return "Hello, {}! Welcome to {}, {}!".format(" ".join(name), city, state)
+#     name = " ".join(name)
+#     return f"Hello, {name}! Welcome to {city}, {state}!"
+    
+def say_hello(name, city, state):
+  return "Hello, {}! Welcome to {}, {}!".format(" ".join(name), city, state)
