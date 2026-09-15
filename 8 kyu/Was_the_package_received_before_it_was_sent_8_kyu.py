@@ -18,8 +18,6 @@
 # from time zone 12 takes 8 hours to be delivered to time zone -3. The package is received 
 # at 22:00 local time, the day before it was sent. Return "True" as it was received the day before it was sent.
 
-def was_package_received_yesterday(tz_from, tz_to, start, duration):
-    return start < tz_from - tz_to - duration
 
 # def was_package_received_yesterday(tz_from, tz_to, start, duration):
     # Calculate the time difference between the two time zones
@@ -36,3 +34,7 @@ def was_package_received_yesterday(tz_from, tz_to, start, duration):
 
     # Return True if the package was delivered on the previous day (due to time zone shifts!)
    # return finish_day < start_day
+
+
+def was_package_received_yesterday(tz_from, tz_to, start, duration):
+    return start < tz_from - tz_to - duration
