@@ -10,12 +10,12 @@
 # which corresponds to the animal encountered by the frog. 
 # If this one is an alligator (case-insensitive) return small otherwise return wide.
 
-def mouth_size(animal): 
-    if animal.lower() == "alligator":
-        return "small"
-    else:
-        return "wide"
-
-
 # def mouth_size(animal): 
-#     return 'small' if animal.lower() == 'alligator' else 'wide'
+#     if animal.lower() == "alligator":
+#         return "small"
+#     else:
+#         return "wide"
+
+
+def mouth_size(animal): 
+    return 'small' if animal.lower() == 'alligator' else 'wide'
