@@ -16,32 +16,32 @@
 # Because you're a nice person, you always round up the tip, regardless of the service.
 
 
-from math import ceil
-def calculate_tip(amount, rating):
-    tips = {
-        'terrible': 0,
-        'poor' : .05,
-        'good' : .1,
-        'great' : .15,
-        'excellent' : .2
-    }
-    if rating.lower() in tips:
-        return ceil(amount * tips[rating.lower()])
-    else:
-        return 'Rating not recognised'
-
-# import math
+# from math import ceil
 # def calculate_tip(amount, rating):
-#     rating = rating.lower()
-#     if rating == "terrible":
-#         return math.ceil(amount * 0)
-#     elif rating == "poor":
-#         return math.ceil(amount * 0.05)
-#     elif rating == "good":
-#         return math.ceil(amount * 0.1)
-#     elif rating == "great":
-#         return math.ceil(amount * 0.15)
-#     elif rating == "excellent":
-#         return math.ceil(amount * 0.2)
+#     tips = {
+#         'terrible': 0,
+#         'poor' : .05,
+#         'good' : .1,
+#         'great' : .15,
+#         'excellent' : .2
+#     }
+#     if rating.lower() in tips:
+#         return ceil(amount * tips[rating.lower()])
 #     else:
-#         return "Rating not recognised"
+#         return 'Rating not recognised'
+
+import math
+def calculate_tip(amount, rating):
+    rating = rating.lower()
+    if rating == "terrible":
+        return math.ceil(amount * 0)
+    elif rating == "poor":
+        return math.ceil(amount * 0.05)
+    elif rating == "good":
+        return math.ceil(amount * 0.1)
+    elif rating == "great":
+        return math.ceil(amount * 0.15)
+    elif rating == "excellent":
+        return math.ceil(amount * 0.2)
+    else:
+        return "Rating not recognised"
