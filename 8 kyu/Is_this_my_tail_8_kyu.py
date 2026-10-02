@@ -6,8 +6,7 @@
 
 # The arguments will always be non empty strings, and normal letters.
 
-def correct_tail(body, tail):
-    return body[-1] == tail
+
 
 # def correct_tail(body, tail):
 #     return body.endswith(tail)
@@ -18,3 +17,6 @@ def correct_tail(body, tail):
 #         return True
 #     else:
 #         return False
+
+def correct_tail(body, tail):
+    return body[-1] == tail
