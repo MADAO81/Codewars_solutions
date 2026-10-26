@@ -11,10 +11,10 @@
 # Output will be the shortened string, e.g., "Friday May 2".
 
 
-def shorten_to_date(long_date):
-    step_one = long_date.split(",")
-    step_two = step_one[0]
-    return "".join(step_two)
-
 # def shorten_to_date(long_date):
-#     return long_date.split(',')[0]
+#     step_one = long_date.split(",")
+#     step_two = step_one[0]
+#     return "".join(step_two)
+
+def shorten_to_date(long_date):
+    return long_date.split(',')[0]
