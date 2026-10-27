@@ -10,10 +10,10 @@
 # [1, 1, 1]  =>  [1]
 # []  =>  []
 
-def two_highest(arg1):
-    step1 = set(arg1)
-    step2 = sorted(list(step1), reverse = True)
-    return step2[:2]
-    
 # def two_highest(arg1):
-#     return sorted(set(arg1), reverse=True)[:2]
+#     step1 = set(arg1)
+#     step2 = sorted(list(step1), reverse = True)
+#     return step2[:2]
+    
+def two_highest(arg1):
+    return sorted(set(arg1), reverse=True)[:2]
