@@ -4,10 +4,11 @@
 # * [1, 2, 3, 4]  -> [4, 3, 2, 1]
 # * [9, 2, 0, 7]  -> [7, 0, 2, 9]
 
-def reverse_list(l):
-    return l[::-1]
 
 
 # def reverse_list(l):
 #   l.reverse()
 #   return l
+
+def reverse_list(l):
+    return l[::-1]
