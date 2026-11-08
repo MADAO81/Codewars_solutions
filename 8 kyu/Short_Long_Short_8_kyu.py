@@ -10,16 +10,16 @@
 # ("1", "22") --> "1221"
 # ("22", "1") --> "1221"
 
-def solution(a, b):
-    short = ""
-    long = ""
-    if len(a)>len(b):
-        short = b
-        long = a
-    elif len(a)<len(b):
-        short = a
-        long = b
-    return short+long+short
-
 # def solution(a, b):
-#     return a+b+a if len(a)<len(b) else b+a+b
+#     short = ""
+#     long = ""
+#     if len(a)>len(b):
+#         short = b
+#         long = a
+#     elif len(a)<len(b):
+#         short = a
+#         long = b
+#     return short+long+short
+
+def solution(a, b):
+    return a+b+a if len(a)<len(b) else b+a+b
