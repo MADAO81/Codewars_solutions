@@ -7,10 +7,10 @@
 # even Santa has a secret password with uppercase and lowercase 
 # letters and special characters :D), the return value must be true. Otherwise it should return false.
 
-class Sleigh(object):
-    def authenticate(self, name, password):
-        return name == 'Santa Claus' and password == 'Ho Ho Ho!'
+# class Sleigh(object):
+#     def authenticate(self, name, password):
+#         return name == 'Santa Claus' and password == 'Ho Ho Ho!'
 
-  # class Sleigh(object):
-  #   def authenticate(self, name, password):
-  #       return (name, password) == ('Santa Claus', 'Ho Ho Ho!')
+  class Sleigh(object):
+    def authenticate(self, name, password):
+        return (name, password) == ('Santa Claus', 'Ho Ho Ho!')
