@@ -9,8 +9,7 @@
 # If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
 
 
-def sum_of_differences(arr):
-    return max(arr) - min(arr) if arr else 0
+
 
 
 # def sum_of_differences(arr):
@@ -19,3 +18,6 @@ def sum_of_differences(arr):
 #     arr.sort(reverse=True)
 #     m = max(arr)
 #     return m-arr[len(arr)-1]
+
+def sum_of_differences(arr):
+    return max(arr) - min(arr) if arr else 0
