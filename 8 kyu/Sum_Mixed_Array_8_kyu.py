@@ -3,11 +3,11 @@
 
 # Return your answer as a number.
 
-def sum_mix(arr):
-    result = 0
-    for i in arr:
-        result += int(i)
-    return result
-
 # def sum_mix(arr):
-#     return sum(map(int, arr))
+#     result = 0
+#     for i in arr:
+#         result += int(i)
+#     return result
+
+def sum_mix(arr):
+    return sum(map(int, arr))
