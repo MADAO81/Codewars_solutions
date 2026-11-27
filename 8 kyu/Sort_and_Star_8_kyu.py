@@ -7,10 +7,10 @@
 
 # You should not remove or add elements from/to the array.
 
-def two_sort(array):
-    result = sorted(array)[0]
-    return "***".join(list(result))
+# def two_sort(array):
+#     result = sorted(array)[0]
+#     return "***".join(list(result))
     
 
-# def two_sort(array):
-#     return '***'.join(min(array))
+def two_sort(array):
+    return '***'.join(min(array))
